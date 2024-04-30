@@ -17,15 +17,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
-
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ResponsiveLayout(mobileScaffold: MobileScaffold(), tabletScaffold: TabletScaffold(), desktopScaffold: DesktopScaffold()),
+      home: const ResponsiveLayout(
+          mobileScaffold: MobileScaffold(),
+          tabletScaffold: TabletScaffold(),
+          desktopScaffold: DesktopScaffold()),
     );
   }
 }
-
-
